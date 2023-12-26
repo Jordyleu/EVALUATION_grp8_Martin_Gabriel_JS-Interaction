@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header id="contenu">
+        <button id="changerTheme" onclick="toggleTheme()">changer de thème</button>
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div>
+                <form action="">
+                    <fieldset>
+                        <label for="nom">nom</label>
+                        <input type="text" id="nom" required>
+                        <label for="prenom">prenom</label>
+                        <input type="text" id="prenom">
+                        <label for="email">Mail</label>
+                        <input type="email" id="Mail">
+                        <label for="mdp">Mot de passe</label>
+                        <input type="password" id="mdp">
+                    </fieldset>
+                    <fieldset>
+                        <legend>sélectionner votre personnage préféré parmis la liste ci-dessous</legend>
+                        <label for="choix1">Dumbledore</label>
+                        <input type="radio" id="choix1" name="personnage">
+                        <label for="choix2">Harry</label>
+                        <input type="radio" id="choix2" name="personnage">
+                        <label for="choix3">Ron</label>
+                        <input type="radio" id="choix3" name="personnage">
+                        <label for="choix4">Hermione</label>
+                        <input type="radio" id="choix4" name="personnage">
+                        <label for="choix5">voldemort</label>
+                        <input type="radio" id="choix5" name="personnage">
+                        <label for="choix6">dobby</label>
+                        <input type="radio" id="choix6" name="personnage">
+                        <label for="choix7">serius black</label>
+                        <input type="radio" id="choix7" name="personnage">
+                        <label for="choix8">drago malefoy</label>
+                        <input type="radio" id="choix8" name="personnage">
+                        <label for="choix9">rubeus hagrid</label>
+                        <input type="radio" id="choix9" name="personnage">
+                    </fieldset>
+                    <fieldset>
+                        <input type="reset" name="" id="">
+                        <input type="submit" name="" id="submit" accesskey="enter">
+                        <div id="mdpError"></div>
+                        <div id="mailError"></div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="image1"><img src="image/image1.jpg" alt="Dumbledore" width="15px" height="15px"><h2>Dumbledore</h2></div>
+              <div class="swiper-slide" id="image2"><img src="image/image2.jpg" alt="harry"><h2>harry</h2></div>
+              <div class="swiper-slide" id="image3"><img src="image/image3.jpg" alt="ron"><h2>ron</h2></div>
+              <div class="swiper-slide" id="image4"><img src="image/image4.jpg" alt="hermione"><h2>hermione</h2></div>
+              <div class="swiper-slide" id="image5"><img src="image/image5.jpg" alt="voldemort"><h2>voldemort</h2></div>
+              <div class="swiper-slide" id="image6"><img src="image/image6.jpg" alt="dobby"><h2>dobby</h2></div>
+              <div class="swiper-slide" id="image7"><img src="image/image7.jpg" alt="serius black"><h2>serius black</h2></div>
+              <div class="swiper-slide" id="image8"><img src="image/image8.jpeg" alt="Drago malefoy"><h2>drogo malefoy</h2></div>
+              <div class="swiper-slide" id="image9"><img src="image/image9.jpg" alt="Rubeus Hagrid"><h2>Rubeus Hagrid</h2></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>

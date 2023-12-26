@@ -1,0 +1,57 @@
+body {
+    position: relative;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background: #eee; /* Couleur de fond par défaut en mode clair */
+    color: #000; /* Couleur de texte par défaut en mode clair */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#contenu{
+    margin: 0 auto;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}  
+.dark-mode{
+    background-color: #333;
+    color: #fff;
+}
+#contenu.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.swiper-slide.dark-mode {
+    color: #fff; /* Couleur de texte dans le Swiper en mode sombre */
+}
